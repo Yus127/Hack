@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e63d8712f1b214d77a6ece5461440a08
+guid: f2687a20168c344e09fb12869b7a062f
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -20,6 +20,12 @@ TextureImporter:
   - first:
       213: 7301909560641151098
     second: TilemapParedes_5
+  - first:
+      213: 963554544742884809
+    second: TilemapParedes_6
+  - first:
+      213: 1940131829045523442
+    second: TilemapParedes_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -63,7 +69,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 48
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -133,9 +139,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1536
-        width: 768
-        height: 768
+        y: 96
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,10 +159,10 @@ TextureImporter:
       name: TilemapParedes_1
       rect:
         serializedVersion: 2
-        x: 768
-        y: 1536
-        width: 768
-        height: 768
+        x: 48
+        y: 96
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,10 +180,10 @@ TextureImporter:
       name: TilemapParedes_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 768
-        width: 768
-        height: 768
+        x: 96
+        y: 96
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,10 +201,10 @@ TextureImporter:
       name: TilemapParedes_3
       rect:
         serializedVersion: 2
-        x: 768
-        y: 768
-        width: 768
-        height: 768
+        x: 0
+        y: 48
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,10 +222,10 @@ TextureImporter:
       name: TilemapParedes_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 768
-        height: 768
+        x: 48
+        y: 48
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -237,10 +243,10 @@ TextureImporter:
       name: TilemapParedes_5
       rect:
         serializedVersion: 2
-        x: 768
-        y: 0
-        width: 768
-        height: 768
+        x: 96
+        y: 48
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,6 +256,48 @@ TextureImporter:
       bones: []
       spriteID: a706b08ee08955560800000000000000
       internalID: 7301909560641151098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapParedes_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c5ec19d0cb3f5d00800000000000000
+      internalID: 963554544742884809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapParedes_7
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f3ffa78e9bbcea10800000000000000
+      internalID: 1940131829045523442
       vertices: []
       indices: 
       edges: []
