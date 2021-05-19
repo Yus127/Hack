@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: TilemapParedes_0
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 8663488832413858005, guid: f2687a20168c344e09fb12869b7a062f,
+  m_Sprite: {fileID: 8663488832413858005, guid: cd57f6c7ec1eb4cbfaf547819a16618f,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:

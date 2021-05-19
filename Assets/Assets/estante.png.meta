@@ -1,37 +1,19 @@
 fileFormatVersion: 2
-guid: cd57f6c7ec1eb4cbfaf547819a16618f
+guid: 42d38ac396c19480b871f6cdc71cb1b7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8663488832413858005
-    second: TilemapParedes_0
+      213: -8536082155139166029
+    second: estante_0
   - first:
-      213: 9195244623164023842
-    second: TilemapParedes_1
+      213: 2970207696415698664
+    second: estante_1
   - first:
-      213: 3067278262357559015
-    second: TilemapParedes_2
+      213: 5897215191188956170
+    second: estante_2
   - first:
-      213: -6765992159623590150
-    second: TilemapParedes_3
-  - first:
-      213: 382373765011058974
-    second: TilemapParedes_4
-  - first:
-      213: 7301909560641151098
-    second: TilemapParedes_5
-  - first:
-      213: 963554544742884809
-    second: TilemapParedes_6
-  - first:
-      213: 1940131829045523442
-    second: TilemapParedes_7
-  - first:
-      213: -6929140569637025152
-    second: TilemapParedes_8
-  - first:
-      213: -746872426050271357
-    second: TilemapParedes_9
+      213: -6047566338416788992
+    second: estante_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -141,133 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TilemapParedes_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 144
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5d877932135ea3870800000000000000
-      internalID: 8663488832413858005
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TilemapParedes_1
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 144
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 224238a24421c9f70800000000000000
-      internalID: 9195244623164023842
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TilemapParedes_2
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 144
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7e689171459219a20800000000000000
-      internalID: 3067278262357559015
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TilemapParedes_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 96
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: afece848afd5a12a0800000000000000
-      internalID: -6765992159623590150
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TilemapParedes_4
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 96
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e11b9e2d9e67e4500800000000000000
-      internalID: 382373765011058974
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TilemapParedes_5
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 96
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a706b08ee08955560800000000000000
-      internalID: 7301909560641151098
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TilemapParedes_6
+      name: estante_0
       rect:
         serializedVersion: 2
         x: 0
@@ -281,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c5ec19d0cb3f5d00800000000000000
-      internalID: 963554544742884809
+      spriteID: 3b01169818eb98980800000000000000
+      internalID: -8536082155139166029
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapParedes_7
+      name: estante_1
       rect:
         serializedVersion: 2
         x: 48
@@ -302,35 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f3ffa78e9bbcea10800000000000000
-      internalID: 1940131829045523442
+      spriteID: 8ee2dfdb92c483920800000000000000
+      internalID: 2970207696415698664
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapParedes_8
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 48
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 08a89043d5fb6df90800000000000000
-      internalID: -6929140569637025152
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TilemapParedes_9
+      name: estante_2
       rect:
         serializedVersion: 2
         x: 0
@@ -344,8 +179,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3874db05c7392a5f0800000000000000
-      internalID: -746872426050271357
+      spriteID: a04eadab8fd17d150800000000000000
+      internalID: 5897215191188956170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: estante_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00abe03e47ab21ca0800000000000000
+      internalID: -6047566338416788992
       vertices: []
       indices: 
       edges: []
