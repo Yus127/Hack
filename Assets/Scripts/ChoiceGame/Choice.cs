@@ -15,45 +15,71 @@ public class Choice : MonoBehaviour
     public GameObject Choice05;
     public GameObject Choice06;
 
+    private int counterPoints= 0;
 
-
-    public int ChoiceMade;
-
-    public int counterPoints = 1;
-    public int counterQuestions = 0;
-
-    public void ChoiceOption1 (){
-        TextBox.GetComponent<Text>().text="¡Oye, tiraste todos mis refrescos, fíjate!";
-        ChoiceMade = 1;
-        counterPoints += -1;
-        
-    }
-
-    public void ChoiceOption2 (){
-        TextBox.GetComponent<Text>().text="Bla hiiii";
-        ChoiceMade = 2;
+    public void ChoiceOption1(){
         counterPoints += 1;
+        if (counterPoints == 1){
+            TextBox.GetComponent<Text>().text="A";    
+        }
+        else if (counterPoints == 2){
+            TextBox.GetComponent<Text>().text="A2"; 
+        }
+        else if (counterPoints == 3){
+            TextBox.GetComponent<Text>().text="A3"; 
+        }
 
     }
 
-     void Start()
-     {
-         
-     }
+    public void ChoiceOption2(){
+        counterPoints += 1;
+        if (counterPoints == 1){
+            TextBox.GetComponent<Text>().text="B";    
+        }
+        else if (counterPoints == 2){
+            TextBox.GetComponent<Text>().text="B2"; 
+        }
+        else if (counterPoints == 3){
+            TextBox.GetComponent<Text>().text="B3"; 
+        }
+
+    }
+
+    public void Prueba(){
+         counterPoints += 1;
+            if (counterPoints == 1){
+            TextBox.GetComponent<Text>().text="Caca";    
+        }
+        else if (counterPoints == 2){
+            TextBox.GetComponent<Text>().text="Caca1";    
+        }
+    }
 
 
     // Update is called once per frame
     void Update()
     {
+        
         Choice03.SetActive(false);
         Choice04.SetActive(false);
         Choice05.SetActive(false);
         Choice06.SetActive(false);
-        if (counterPoints >= 0){
+        if (counterPoints == 1){
             Choice01.SetActive(false);
             Choice02.SetActive(false);
             Choice03.SetActive(true);
-     }
+            Choice04.SetActive(true);
         }
+        else if (counterPoints == 2){
+            Choice03.SetActive(false);
+            Choice04.SetActive(false);
+            Choice05.SetActive(true);
+            Choice06.SetActive(true);
+        }
+        else if (counterPoints == 3){
+            Choice05.SetActive(false);
+            Choice06.SetActive(false);
+        }
+    }
         
     }
