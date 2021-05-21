@@ -15,20 +15,26 @@ public class Choice : MonoBehaviour
     public GameObject Choice05;
     public GameObject Choice06;
 
+    public Button btnUp;
+    public Button btnDown;
+
     private int counterQuestions = 0;
     //falta asignar los puntos y lo de ganar y perder
-    private int counterPoints;
+    public int counterPoints= 0;
 
     public void ChoiceOption1(){
         counterQuestions  += 1;
         if (counterQuestions  == 1){
-            TextBox.GetComponent<Text>().text="A";    
+            TextBox.GetComponent<Text>().text="Págame o llamo a la policía."; 
+               counterPoints-= 1;
         }
         else if (counterQuestions  == 2){
-            TextBox.GetComponent<Text>().text="A2"; 
+            TextBox.GetComponent<Text>().text="No te preocupes, fue un accidente."; 
+            counterPoints+= 1;
         }
         else if (counterQuestions  == 3){
-            TextBox.GetComponent<Text>().text="A3"; 
+            TextBox.GetComponent<Text>().text="Ya pasó, ten más cuidado."; 
+            counterPoints+= 1;
         }
 
     }
@@ -36,31 +42,26 @@ public class Choice : MonoBehaviour
     public void ChoiceOption2(){
         counterQuestions  += 1;
         if (counterQuestions  == 1){
-            TextBox.GetComponent<Text>().text="B";    
+            TextBox.GetComponent<Text>().text="Ahora tienes que limpiar y pagármelos.";
+            counterPoints+= 1;    
         }
         else if (counterQuestions  == 2){
-            TextBox.GetComponent<Text>().text="B2"; 
+            TextBox.GetComponent<Text>().text="¡Salte de mi tienda!"; 
+            counterPoints-= 1; 
         }
         else if (counterQuestions  == 3){
-            TextBox.GetComponent<Text>().text="B3"; 
+            TextBox.GetComponent<Text>().text="Te lo advertí, voy a llamar a la policía."; 
+            counterPoints-= 1; 
         }
 
     }
 
-    public void Prueba(){
-         counterQuestions  += 1;
-            if (counterQuestions  == 1){
-            TextBox.GetComponent<Text>().text="Caca";    
-        }
-        else if (counterQuestions  == 2){
-            TextBox.GetComponent<Text>().text="Caca1";    
-        }
-    }
 
 
     // Update is called once per frame
     void Update()
     {
+        
         
         Choice03.SetActive(false);
         Choice04.SetActive(false);
@@ -79,8 +80,11 @@ public class Choice : MonoBehaviour
             Choice06.SetActive(true);
         }
         else if (counterQuestions  == 3){
-            Choice05.SetActive(false);
-            Choice06.SetActive(false);
+            // Choice05.SetActive(false);
+            // Choice06.SetActive(false);
+            btnUp.gameObject.SetActive(false);
+            btnDown.gameObject.SetActive(false);
+
         }
     }
         
