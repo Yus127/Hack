@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DialogDisplay : MonoBehaviour
 {
@@ -11,7 +12,9 @@ public class DialogDisplay : MonoBehaviour
 
     private SpeakerUI speakerUI1;
     private SpeakerUI speakerUI2;
-    
+    public static int count=0;
+    [SerializeField] int counterDialog;
+    public  string scene;
     
 
     private int activateLineIndex = 0;
@@ -31,6 +34,11 @@ public class DialogDisplay : MonoBehaviour
     {
         if (Input.GetKeyDown("space")){
             AdvanceConvo();
+            count +=1;
+            if(count == counterDialog)
+            {
+                SceneManager.LoadScene(scene);
+            }
         }
     }
 

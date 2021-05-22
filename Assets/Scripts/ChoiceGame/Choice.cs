@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Choice : MonoBehaviour
 {
@@ -22,6 +23,11 @@ public class Choice : MonoBehaviour
     //falta asignar los puntos y lo de ganar y perder
     public int counterPoints= 0;
 
+
+    void Start() {
+        
+        
+    }
     public void ChoiceOption1(){
         counterQuestions  += 1;
         if (counterQuestions  == 1){
@@ -84,8 +90,24 @@ public class Choice : MonoBehaviour
             // Choice06.SetActive(false);
             btnUp.gameObject.SetActive(false);
             btnDown.gameObject.SetActive(false);
-
+            if(counterPoints >= 0)
+            {
+                StartCoroutine(Winner());
+            }else StartCoroutine(Loser());
         }
+        
+    }
+
+    IEnumerator Winner()
+    {
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene("fiesta");
+    }
+
+    IEnumerator Loser()
+    {
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene("ChoiceGame");
     }
         
     }

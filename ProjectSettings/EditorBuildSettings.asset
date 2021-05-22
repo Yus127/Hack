@@ -14,4 +14,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: baee5e2134e754e99a8510dd39cafef6
+  - enabled: 1
+    path: Assets/Scenes/final.unity
+    guid: 96ffb4cb972a7422aa00abaa26f00b05
+  - enabled: 1
+    path: Assets/Scenes/ChoiceGame.unity
+    guid: 3e1b7b187b56fe64585afe1d33fb6fce
+  - enabled: 1
+    path: Assets/Scenes/Scene2 Conversation.unity
+    guid: eaa8abf88ac4b174e8c7eeecdceb9767
+  - enabled: 1
+    path: Assets/Scenes/fiesta.unity
+    guid: bea6961281c0049a998abb8f38bdddc7
   m_configObjects: {}

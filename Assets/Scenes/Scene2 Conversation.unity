@@ -609,6 +609,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 462970412}
     m_Modifications:
+    - target: {fileID: 605672340927006595, guid: 85f22acbb78f47c4d8cb5d7286290a0e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1010050305441162110, guid: 85f22acbb78f47c4d8cb5d7286290a0e,
         type: 3}
       propertyPath: m_SizeDelta.x
@@ -691,6 +696,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2742337809582980564, guid: 85f22acbb78f47c4d8cb5d7286290a0e,
         type: 3}
+      propertyPath: scene
+      value: ChoiceGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 2742337809582980564, guid: 85f22acbb78f47c4d8cb5d7286290a0e,
+        type: 3}
       propertyPath: speaker1
       value: 
       objectReference: {fileID: 1986045717}
@@ -699,6 +709,16 @@ PrefabInstance:
       propertyPath: speaker2
       value: 
       objectReference: {fileID: 761688561}
+    - target: {fileID: 2742337809582980564, guid: 85f22acbb78f47c4d8cb5d7286290a0e,
+        type: 3}
+      propertyPath: counterDialog
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2742337809582980564, guid: 85f22acbb78f47c4d8cb5d7286290a0e,
+        type: 3}
+      propertyPath: scene.m_Handle
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2936387626734300606, guid: 85f22acbb78f47c4d8cb5d7286290a0e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
