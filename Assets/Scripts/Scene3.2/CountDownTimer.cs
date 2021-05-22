@@ -6,8 +6,9 @@ using UnityEngine.UI;
 public class CountDownTimer : MonoBehaviour
 {
     
-    float currentTime = 0f;
-    float startingTime = 10f;
+    public static float currentTime = 0f;
+     float startingTime = 5f;
+    
 
     [SerializeField] Text countdownText;
     // Start is called before the first frame update
