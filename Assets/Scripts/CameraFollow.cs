@@ -1,93 +1,101 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using System.Collections;
 
-public class CameraFollow : MonoBehaviour
-{
-    public float xMargin = -1f; // Distance in the x axis the player can move before the camera follows.
-    public float yMargin = -1f; // Distance in the y axis the player can move before the camera follows.
-    public float xSmooth = 8f; // How smoothly the camera catches up with it's target movement in the x axis.
-    public float ySmooth = 8f; // How smoothly the camera catches up with it's target movement in the y axis.
-    public Vector2 maxXAndY; // The maximum x and y coordinates the camera can have.
-    public Vector2 minXAndY; // The minimum x and y coordinates the camera can have.
-    float targetX;
-    float targetY;
+public class CameraFollow : MonoBehaviour {
+/*
+	//public Controller2D target;
+    public Transform playerTransform;
+	public float verticalOffset;
+	public float lookAheadDstX;
+	public float lookSmoothTimeX;
+	public float verticalSmoothTime;
+	public Vector2 focusAreaSize;
 
-    public GameObject target;//player
-    private Transform targetPosition;//posicion de player
-    public float _camerSpeed;//velocidad de camara
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+	FocusArea focusArea;
 
-    // Update is called once per frame
-    void Update()
-    {
-        //almacenar la posicion de objetivo, en este caso es la posicion del jugador
-        if (GameObject.FindGameObjectWithTag("Player") != null)
-        {
-            targetPosition = GameObject.FindGameObjectWithTag("Player").transform;
-            TrackPlayer();
-        } else
-        {
-            targetPosition = GameObject.FindGameObjectWithTag("ActiveSewer").transform; // last pos before teleport
-        }
-    }
+	float currentLookAheadX;
+	float targetLookAheadX;
+	float lookAheadDirX;
+	float smoothLookVelocityX;
+	float smoothVelocityY;
 
-    /*private void LateUpdate()
-    {
-        //movemos la camara de un aposicio a otra de modo suavisado, sin saltos
-        //cambiarle la posicion a la camara_ Lerp Linear interpolation, interpolacion lineal entre dos vectores
-        this.transform.position = Vector3.Lerp(this.transform.position, targetPosition, Time.deltaTime * _camerSpeed);
-        //                                      posicion actual, posicion a la que quieras ir, tiempo  que vas a utilizar   
-    }*/
+	bool lookAheadStopped;
 
-    private bool CheckXMargin()
-    {
-        // Returns true if the distance between the camera and the player in the x axis is greater than the x margin.
-        return Mathf.Abs(transform.position.x - targetPosition.position.x) >= xMargin;
-    }
+	void Start() {
+		focusArea = new FocusArea (playerTransform.GetComponent<Collider>().bounds, focusAreaSize);
+	}
+
+	void LateUpdate() {
+		focusArea.Update (playerTransform.GetComponent<Collider>().bounds);
+
+		Vector2 focusPosition = focusArea.centre + Vector2.up * verticalOffset;
+
+		if (focusArea.velocity.x != 0) {
+			lookAheadDirX = Mathf.Sign (focusArea.velocity.x);
+			if (Mathf.Sign(playerTransform.playerInput.x) == Mathf.Sign(focusArea.velocity.x) && playerTransform.playerInput.x != 0) {
+				lookAheadStopped = false;
+				targetLookAheadX = lookAheadDirX * lookAheadDstX;
+			}
+			else {
+				if (!lookAheadStopped) {
+					lookAheadStopped = true;
+					targetLookAheadX = currentLookAheadX + (lookAheadDirX * lookAheadDstX - currentLookAheadX)/4f;
+				}
+			}
+		}
 
 
-    private bool CheckYMargin()
-    {
-        // Returns true if the distance between the camera and the player in the y axis is greater than the y margin.
-        return Mathf.Abs(transform.position.y - targetPosition.position.y) >= yMargin;
-    }
+		currentLookAheadX = Mathf.SmoothDamp (currentLookAheadX, targetLookAheadX, ref smoothLookVelocityX, lookSmoothTimeX);
 
-    private void TrackPlayer()
-    {
-        // By default the target x and y coordinates of the camera are it's current x and y coordinates.
-        targetX = transform.position.x;
-        targetY = transform.position.y;
+		focusPosition.y = Mathf.SmoothDamp (transform.position.y, focusPosition.y, ref smoothVelocityY, verticalSmoothTime);
+		focusPosition += Vector2.right * currentLookAheadX;
+		transform.position = (Vector3)focusPosition + Vector3.forward * -10;
+	}
 
-        // If the player has moved beyond the x margin...
-        if (CheckXMargin())
-        {
-            // ... the target x coordinate should be a Lerp between the camera's current x position and the player's current x position.
-            //targetX = Mathf.Lerp(transform.position.x, m_Player.position.x, xSmooth * Time.deltaTime);
-            targetX = targetPosition.position.x;
-        }
-        else
-            targetX = transform.position.x;
+	void OnDrawGizmos() {
+		Gizmos.color = new Color (1, 0, 0, .5f);
+		Gizmos.DrawCube (focusArea.centre, focusAreaSize);
+	}
 
-        // If the player has moved beyond the y margin...
-        if (CheckYMargin())
-        {
-            // ... the target y coordinate should be a Lerp between the camera's current y position and the player's current y position.
-            //targetY = Mathf.Lerp(transform.position.y, m_Player.position.y, ySmooth * Time.deltaTime);
-            targetY = targetPosition.position.y;
-        }
-        else
-            targetY = transform.position.y;
+	struct FocusArea {
+		public Vector2 centre;
+		public Vector2 velocity;
+		float left,right;
+		float top,bottom;
 
-        // The target x and y coordinates should not be larger than the maximum or smaller than the minimum.
-        targetX = Mathf.Clamp(targetX, minXAndY.x, maxXAndY.x);
-        targetY = Mathf.Clamp(targetY, minXAndY.y, maxXAndY.y);
 
-        // Set the camera's position to the target position with the same z component.
-        transform.position = new Vector3(targetX, targetY, transform.position.z);
-    }
+		public FocusArea(Bounds targetBounds, Vector2 size) {
+			left = targetBounds.center.x - size.x/2;
+			right = targetBounds.center.x + size.x/2;
+			bottom = targetBounds.min.y;
+			top = targetBounds.min.y + size.y;
+
+			velocity = Vector2.zero;
+			centre = new Vector2((left+right)/2,(top +bottom)/2);
+		}
+
+		public void Update(Bounds targetBounds) {
+			float shiftX = 0;
+			if (targetBounds.min.x < left) {
+				shiftX = targetBounds.min.x - left;
+			} else if (targetBounds.max.x > right) {
+				shiftX = targetBounds.max.x - right;
+			}
+			left += shiftX;
+			right += shiftX;
+
+			float shiftY = 0;
+			if (targetBounds.min.y < bottom) {
+				shiftY = targetBounds.min.y - bottom;
+			} else if (targetBounds.max.y > top) {
+				shiftY = targetBounds.max.y - top;
+			}
+			top += shiftY;
+			bottom += shiftY;
+			centre = new Vector2((left+right)/2,(top +bottom)/2);
+			velocity = new Vector2 (shiftX, shiftY);
+		}
+	}*/
+
 }
+
