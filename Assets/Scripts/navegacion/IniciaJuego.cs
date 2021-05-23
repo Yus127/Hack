@@ -9,7 +9,7 @@ public class IniciaJuego : MonoBehaviour
     // Start is called before the first frame update
     public void BtnNew()
     {
-        SceneManager.LoadScene("tienda");
+        SceneManager.LoadScene("casita");
     }
 
     // Update is called once per frame
