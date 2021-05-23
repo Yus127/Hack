@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class DontDestroy : MonoBehaviour
 {
+ public bool toggle = true;
     // Start is called before the first frame update
-    void Start()
+    void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            ToggleSound();
+        }
+
     }
 
     // Update is called once per frame
@@ -19,4 +24,15 @@ public class DontDestroy : MonoBehaviour
         }
         DontDestroyOnLoad(this.gameObject);
     }
+     public void ToggleSound()
+    {
+        toggle = !toggle;
+
+        if (toggle)
+            AudioListener.volume = 1f;
+
+        else
+            AudioListener.volume = 0f;
+    }
+
 }
