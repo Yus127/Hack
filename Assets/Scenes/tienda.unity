@@ -398,6 +398,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Nuevo: {fileID: 5121632826857699671, guid: ad2b42be432ff46a18b542dcbe686bbc, type: 3}
   Viejo: {fileID: -3289453322174803879, guid: ad2b42be432ff46a18b542dcbe686bbc, type: 3}
+  door: {fileID: 0}
 --- !u!70 &526746414
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -3161,7 +3162,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2055017476
 RectTransform:
   m_ObjectHideFlags: 0
