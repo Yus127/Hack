@@ -44,6 +44,6 @@ void OnCollisionEnter2D(Collision2D collision){
       IEnumerator TirarRefresco()
     {
         yield return new WaitForSeconds(2);
-        SceneManager.LoadScene("DialogoTienda");
+        SceneManager.LoadScene("ChoiceGame");
     }
 }

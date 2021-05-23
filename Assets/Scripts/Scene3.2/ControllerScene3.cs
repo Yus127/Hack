@@ -39,7 +39,7 @@ public class ControllerScene3 : MonoBehaviour
         }
 
         yield return new WaitForSeconds(2);
-        SceneManager.LoadScene("fiesta");
+        SceneManager.LoadScene("Reflexion");
     }
     IEnumerator Loser()
     {

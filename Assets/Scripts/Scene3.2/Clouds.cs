@@ -13,7 +13,7 @@ public class Clouds : MonoBehaviour
     // Update is called once per frame
   
    public void OnMouseDown() {
-        gameObject.active = false;
+        gameObject.SetActive(false);
         Destroy(gameObject);
         ControllerScene3.counter += 1;
     

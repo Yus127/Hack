@@ -137,7 +137,7 @@ PrefabInstance:
     - target: {fileID: 2742337809582980564, guid: 85f22acbb78f47c4d8cb5d7286290a0e,
         type: 3}
       propertyPath: scene
-      value: fiesta
+      value: Pensamientos
       objectReference: {fileID: 0}
     - target: {fileID: 2742337809582980564, guid: 85f22acbb78f47c4d8cb5d7286290a0e,
         type: 3}
