@@ -5,11 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class counterScene3 : MonoBehaviour
 {
-public static int count=0;
+public static int count;
     // Start is called before the first frame update
     void Start()
     {
-        
+        count=0;
     }
 
     // Update is called once per frame
