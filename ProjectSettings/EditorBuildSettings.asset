@@ -14,4 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: baee5e2134e754e99a8510dd39cafef6
+  - enabled: 1
+    path: Assets/Scenes/fiesta.unity
+    guid: bea6961281c0049a998abb8f38bdddc7
+  - enabled: 1
+    path: Assets/Scenes/casita.unity
+    guid: dabdd0e12ce6e48478b44957f15b0236
+  - enabled: 1
+    path: Assets/Scenes/final.unity
+    guid: 96ffb4cb972a7422aa00abaa26f00b05
   m_configObjects: {}
