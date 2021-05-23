@@ -27,4 +27,16 @@ public class movimientopersonaje : MonoBehaviour
         rb.MovePosition(rb.position + movimiento*velocidad * Time.fixedDeltaTime);
 
     }
+
+
+    void OnCollisionEnter2D(Collision2D collision){
+        
+        if (collision.gameObject.tag == "Estante" )
+        {
+            print("hola");
+
+        }
+
+        
+    }
 }
