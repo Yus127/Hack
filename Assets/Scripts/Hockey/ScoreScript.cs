@@ -6,6 +6,8 @@ public class ScoreScript : MonoBehaviour
      public GameObject GameOverText;
      public Text Won;
      public Text Lost;
+     public Button Won2;
+     public Button Lost2;
 
   public enum Score
     {
@@ -23,6 +25,7 @@ public class ScoreScript : MonoBehaviour
             print("perdiste");
             GameOverText.gameObject.SetActive(true); 
             Lost.gameObject.SetActive(true);
+            Lost2.gameObject.SetActive(true);
             }
             }
         else{
@@ -31,6 +34,7 @@ public class ScoreScript : MonoBehaviour
             print("ganaste");
             GameOverText.gameObject.SetActive(true); 
             Won.gameObject.SetActive(true);
+            Won2.gameObject.SetActive(true);
             }
             }
             
