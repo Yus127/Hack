@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class ActivateMiniGame : MonoBehaviour
 {
@@ -9,7 +11,7 @@ public class ActivateMiniGame : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             print("jala");
-            GameManager.instance.Win();
+            SceneManager.LoadScene("AirHockey");
         }
         
     }

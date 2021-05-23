@@ -21,11 +21,11 @@ public class PuckScript : MonoBehaviour
     { 
         if (!WasGoal)
         {
-            if (other.tag == "AiGoal")
+            if (other.tag == "AIGoal")
             {
                 ScoreScriptInstance.Increment(ScoreScript.Score.PlayerScore);
                 WasGoal = true;
-                StartCoroutine(ResetPuck(false));
+                StartCoroutine(ResetPuck(true));
             }
             else if (other.tag == "PlayerGoal")
             {
