@@ -162,7 +162,7 @@ PrefabInstance:
     - target: {fileID: 8771165441001644842, guid: a4ac11ea44c874e9db250d99af0c0179,
         type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 16
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 8771165441001644843, guid: a4ac11ea44c874e9db250d99af0c0179,
         type: 3}
@@ -1510,7 +1510,7 @@ PrefabInstance:
     - target: {fileID: 8771165441001644842, guid: a4ac11ea44c874e9db250d99af0c0179,
         type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 16
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 8771165441001644843, guid: a4ac11ea44c874e9db250d99af0c0179,
         type: 3}
@@ -1996,11 +1996,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 24
+    m_Font: {fileID: 12800000, guid: 3b13d6f95f96f447098a7244d0a782fc, type: 3}
+    m_FontSize: 36
     m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 2
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -2451,8 +2451,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 26
+    m_Font: {fileID: 12800000, guid: 3b13d6f95f96f447098a7244d0a782fc, type: 3}
+    m_FontSize: 36
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -2463,7 +2463,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Perdedor
+  m_Text: Perdiste :(
 --- !u!222 &1860995405
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2721,8 +2721,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 26
+    m_Font: {fileID: 12800000, guid: 3b13d6f95f96f447098a7244d0a782fc, type: 3}
+    m_FontSize: 36
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
