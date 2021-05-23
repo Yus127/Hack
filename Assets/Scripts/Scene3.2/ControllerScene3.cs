@@ -34,13 +34,13 @@ public class ControllerScene3 : MonoBehaviour
 
     IEnumerator Winner()
     {
-    
+        counterScene3.count=counterScene3.count+1;
+
         yield return new WaitForSeconds(2);
         SceneManager.LoadScene("fiesta");
     }
     IEnumerator Loser()
     {
-    counterScene3.count=counterScene3.count+1;
         yield return new WaitForSeconds(2);
         SceneManager.LoadScene(scene.name);
     }
