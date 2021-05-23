@@ -17,7 +17,7 @@ public class AIScript : MonoBehaviour
     private Boundary puckBoundary;
 
     private Vector2 targetPosition;
-    private Vector2 randTon;
+    //private Vector2 randTon;
 
     private bool isFirstTimeInOpponentsHalf = true;
     private float offsetXFromTarget;
@@ -42,14 +42,14 @@ public class AIScript : MonoBehaviour
                 if (isFirstTimeInOpponentsHalf)
                 {
                     isFirstTimeInOpponentsHalf = false;
-                    offsetXFromTarget = Random.Range(-1f, 1f);
+                    offsetXFromTarget = Random.Range(-3f, 3f);
                 }
-                movementSpeed = MaxMovementSpeed * Random.Range(0.1f, 0.3f);
+                movementSpeed = MaxMovementSpeed * Random.Range(0.1f, 0.15f);
                 targetPosition = new Vector2(Mathf.Clamp(Puck.position.x + offsetXFromTarget, playerBoundary.Left, playerBoundary.Right), startingPosition.y);
             }
             else
             {
-            randTon= new Vector2(0.05f,0.05f);
+            //randTon= new Vector2(0.05f,0.05f);
                 isFirstTimeInOpponentsHalf = true;
 
                 movementSpeed = Random.Range(MaxMovementSpeed * 0.4f, MaxMovementSpeed);
@@ -58,8 +58,8 @@ public class AIScript : MonoBehaviour
                                             Mathf.Clamp(Puck.position.y, playerBoundary.Down,
                                             playerBoundary.Up));
             }
-            rb.MovePosition(Vector2.MoveTowards(rb.position+randTon, targetPosition+randTon,
+            rb.MovePosition(Vector2.MoveTowards(rb.position, targetPosition,
                                                     movementSpeed * Time.fixedDeltaTime));
         }   
-        }
+    }
 }
