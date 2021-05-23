@@ -9,6 +9,8 @@ public static int count=0;
     // Start is called before the first frame update
     void Start()
     {
+            DontDestroyOnLoad(this.gameObject);
+
         //count=0;
     }
 
@@ -16,7 +18,7 @@ public static int count=0;
     void Update()
     {
     print(count);
-    if(count==2){
+    if(count==11){
     
         print("ya es todo ");
         SceneManager.LoadScene("Reflexion");

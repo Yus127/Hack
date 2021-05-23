@@ -34,7 +34,9 @@ public class ControllerScene3 : MonoBehaviour
 
     IEnumerator Winner()
     {
-        counterScene3.count=counterScene3.count+1;
+    if(counterScene3.count<2){
+        counterScene3.count=counterScene3.count+10;
+        }
 
         yield return new WaitForSeconds(2);
         SceneManager.LoadScene("fiesta");
