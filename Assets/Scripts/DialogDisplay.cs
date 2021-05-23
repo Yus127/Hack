@@ -12,7 +12,7 @@ public class DialogDisplay : MonoBehaviour
 
     private SpeakerUI speakerUI1;
     private SpeakerUI speakerUI2;
-    public static int count=0;
+    public static int countConver=0;
     [SerializeField] int counterDialog;
     public  string scene;
     
@@ -34,8 +34,9 @@ public class DialogDisplay : MonoBehaviour
     {
         if (Input.GetKeyDown("space")){
             AdvanceConvo();
-            count +=1;
-            if(count == counterDialog)
+            countConver +=1;
+            print(countConver);
+            if(countConver == counterDialog)
             {
                 SceneManager.LoadScene(scene);
             }

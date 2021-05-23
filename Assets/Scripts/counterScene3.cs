@@ -30,6 +30,7 @@ public static int count=0;
     
         print("ya es todo ");
         SceneManager.LoadScene("Reflexion");
+        count=count+1;
         //Ended.gameObject.SetActive(true); 
         //Destroy(mommy);
         }

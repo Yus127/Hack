@@ -281,12 +281,12 @@ PrefabInstance:
     - target: {fileID: 2742337809582980564, guid: 85f22acbb78f47c4d8cb5d7286290a0e,
         type: 3}
       propertyPath: scene
-      value: Menu
+      value: final
       objectReference: {fileID: 0}
     - target: {fileID: 2742337809582980564, guid: 85f22acbb78f47c4d8cb5d7286290a0e,
         type: 3}
       propertyPath: counterDialog
-      value: 6
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 3369101306952643652, guid: 85f22acbb78f47c4d8cb5d7286290a0e,
         type: 3}

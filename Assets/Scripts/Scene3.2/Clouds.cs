@@ -15,7 +15,7 @@ public class Clouds : MonoBehaviour
    public void OnMouseDown() {
         gameObject.SetActive(false);
         Destroy(gameObject);
-        ControllerScene3.counter += 1;
+        ControllerScene3.counterClouds += 1;
     
 //   renderer.enabled = false;
     }

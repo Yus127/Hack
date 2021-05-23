@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class ControllerScene3 : MonoBehaviour
 {
- public static int counter= 0;
+ public static int counterClouds= 0;
    [SerializeField] GameObject win;
    [SerializeField] GameObject lost;
 
@@ -22,11 +22,12 @@ public class ControllerScene3 : MonoBehaviour
         win.SetActive(false);
         lost.SetActive(false);
         
-       if(counter == 14 && CountDownTimer.currentTime >= 0){
+       if(counterClouds == 14 && CountDownTimer.currentTime >= 0){
            print("Win");
            StartCoroutine(Winner());
         win.SetActive(true);
        } else if(CountDownTimer.currentTime == 0){
+            counterClouds=0;
            lost.SetActive(true);
             StartCoroutine (Loser());
        }
@@ -39,7 +40,7 @@ public class ControllerScene3 : MonoBehaviour
         }
 
         yield return new WaitForSeconds(2);
-        SceneManager.LoadScene("Reflexion");
+        SceneManager.LoadScene("fiesta");
     }
     IEnumerator Loser()
     {
