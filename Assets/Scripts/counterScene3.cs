@@ -9,9 +9,17 @@ public static int count=0;
     // Start is called before the first frame update
     void Start()
     {
-            DontDestroyOnLoad(this.gameObject);
+          //  DontDestroyOnLoad(this.gameObject);
 
         //count=0;
+    }
+    void Awake()
+    {
+        GameObject[] objs =GameObject.FindGameObjectsWithTag("contador3");
+        if(objs.Length > 1){
+        Destroy(this.gameObject);
+        }
+        DontDestroyOnLoad(this.gameObject);
     }
 
     // Update is called once per frame
