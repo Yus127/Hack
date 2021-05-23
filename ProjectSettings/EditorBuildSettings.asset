@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/tienda.unity
     guid: 4c154ae199a8e4f0da82fb15711fb81c
   - enabled: 1
+    path: Assets/Scenes/DialogoTienda.unity
+    guid: a47c371537b68442d976aeb4b758d57c
+  - enabled: 1
     path: Assets/Scenes/AirHockey.unity
     guid: 3fda54f8deb0f4ebc95d28e173f4553a
   - enabled: 1
