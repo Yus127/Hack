@@ -11,8 +11,8 @@ public class ActivateMinigame2 : MonoBehaviour
         
         if (collision.gameObject.tag == "Player")
         {
-            print("jala");
-            SceneManager.LoadScene("Scene3.2");
+           // print("jala");
+            SceneManager.LoadScene("Rechazo");
         }
         
     }
