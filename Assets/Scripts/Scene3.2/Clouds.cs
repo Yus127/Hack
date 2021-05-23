@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NoTeQueria : MonoBehaviour
+public class Clouds : MonoBehaviour
 {
-    // Start is called before the first frame update
+   
     void Start()
     {
         
@@ -15,6 +15,12 @@ public class NoTeQueria : MonoBehaviour
    public void OnMouseDown() {
         gameObject.active = false;
         Destroy(gameObject);
+        ControllerScene3.counter += 1;
+    
 //   renderer.enabled = false;
     }
+
+
+
+    
 }
