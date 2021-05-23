@@ -260,17 +260,17 @@ PrefabInstance:
         type: 3}
       propertyPath: convo
       value: 
-      objectReference: {fileID: 11400000, guid: 35c67f183fa91cd49bc1449c8693941b,
+      objectReference: {fileID: 11400000, guid: 3a245a3f4efcadd40a95786f697fccd6,
         type: 2}
     - target: {fileID: 2742337809582980564, guid: 85f22acbb78f47c4d8cb5d7286290a0e,
         type: 3}
       propertyPath: scene
-      value: casita
+      value: Menu
       objectReference: {fileID: 0}
     - target: {fileID: 2742337809582980564, guid: 85f22acbb78f47c4d8cb5d7286290a0e,
         type: 3}
       propertyPath: counterDialog
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3369101306952643652, guid: 85f22acbb78f47c4d8cb5d7286290a0e,
         type: 3}
