@@ -38,6 +38,7 @@ public class DialogDisplay : MonoBehaviour
             print(countConver);
             if(countConver == counterDialog)
             {
+            
                 SceneManager.LoadScene(scene);
             }
         }

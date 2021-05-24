@@ -29,6 +29,7 @@ public static int count=0;
     if(count==11){
     
         print("ya es todo ");
+        
         SceneManager.LoadScene("Reflexion");
         count=count+1;
         //Ended.gameObject.SetActive(true); 
