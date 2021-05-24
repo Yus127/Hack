@@ -1620,6 +1620,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ajolote
       objectReference: {fileID: 0}
+    - target: {fileID: 1085261994248767752, guid: ed00a6f20d331428394ae54010777804,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 1085261994248767755, guid: ed00a6f20d331428394ae54010777804,
         type: 3}
       propertyPath: m_RootOrder
@@ -2852,8 +2857,8 @@ Tilemap:
   - first: {x: -1, y: 2, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 1
-      m_TileSpriteIndex: 1
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -3022,8 +3027,8 @@ Tilemap:
   - first: {x: 0, y: 3, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 2
-      m_TileSpriteIndex: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -3032,8 +3037,8 @@ Tilemap:
   - first: {x: 1, y: 3, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 2
-      m_TileSpriteIndex: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -3103,22 +3108,22 @@ Tilemap:
   m_TileAssetArray:
   - m_RefCount: 28
     m_Data: {fileID: 11400000, guid: 0946e56e4ce9f4082b03d12ffe26dc28, type: 2}
-  - m_RefCount: 9
+  - m_RefCount: 8
     m_Data: {fileID: 11400000, guid: 496f9da71f80a47c5a2b89fbdae807d5, type: 2}
-  - m_RefCount: 39
+  - m_RefCount: 37
     m_Data: {fileID: 11400000, guid: e50e5c43f29084e8784f86206f9789ff, type: 2}
-  - m_RefCount: 52
+  - m_RefCount: 55
     m_Data: {fileID: 11400000, guid: e265e062eca204c58b3ebf04c57aeec6, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 28
     m_Data: {fileID: 8436805195306567219, guid: 91c40079685b34ebe89f5ad87b7fbaca,
       type: 3}
-  - m_RefCount: 9
+  - m_RefCount: 8
     m_Data: {fileID: 824049889783671003, guid: 91c40079685b34ebe89f5ad87b7fbaca, type: 3}
-  - m_RefCount: 39
+  - m_RefCount: 37
     m_Data: {fileID: -222549056760394426, guid: 91c40079685b34ebe89f5ad87b7fbaca,
       type: 3}
-  - m_RefCount: 52
+  - m_RefCount: 55
     m_Data: {fileID: -5106705596119056976, guid: 91c40079685b34ebe89f5ad87b7fbaca,
       type: 3}
   m_TileMatrixArray:
